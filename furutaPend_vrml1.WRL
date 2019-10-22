@@ -1,0 +1,98 @@
+#VRML V2.0 utf8
+
+#Created with V-Realm Builder v2.0
+#Integrated Data Systems Inc.
+#www.ids-net.com
+
+
+DEF taban Transform {
+	children [ 
+	    Shape {
+		    appearance	Appearance {
+			    material	Material {
+			    }
+
+		    }
+
+		    geometry	Cylinder {
+			    height	2
+			    radius	1.5
+		    }
+
+	    }
+
+	    DEF top1 Transform {
+		    translation	0 1.2 0
+		    children [ 
+			Shape {
+				appearance	Appearance {
+					material	Material {
+					}
+
+				}
+
+				geometry	Sphere {
+					radius	0.3
+				}
+
+			}
+
+			DEF line1 Transform {
+				translation	1.5 0.1 0
+				rotation	0 0 1  1.5708
+				children [ 
+				    Shape {
+					    appearance	Appearance {
+						    material	Material {
+						    }
+
+					    }
+
+					    geometry	Cylinder {
+						    height	3.4
+						    radius	0.2
+					    }
+
+				    }
+
+				    DEF top2 Transform {
+					    translation	0 -1.8 0
+					    children [ 
+						Shape {
+							appearance	Appearance {
+								material	Material {
+								}
+
+							}
+
+							geometry	Sphere {
+								radius	0.3
+							}
+
+						}
+
+						DEF line2 Transform {
+							translation	1.2 0 0
+							rotation	0 0 1  1.5708
+							children Shape {
+								appearance	Appearance {
+									material	Material {
+									}
+
+								}
+
+								geometry	Cylinder {
+									height	2.7
+									radius	0.2
+								}
+
+							}
+						}
+					    ]
+				    }
+				]
+			}
+		    ]
+	    }
+	]
+}
